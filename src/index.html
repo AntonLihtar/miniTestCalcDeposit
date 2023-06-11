@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Калькулятор доходности вкладов</h1>
+        <div class="content">
+
+            <div class="block">
+                <div class="block_div">
+                    Введите имя:
+                    <input type="text" class="name" value="Агент">
+                </div>
+                <div class="block_div">
+                    Введите фамилию:
+                    <input type="text" class="surname" value="Смит">
+                </div>
+                <div class="block_div">Введите бюджет:
+                    <input type="number" class="budget" value="1000000">
+                </div>
+                <div class="block_div">Введите % годовых:
+                    <input type="number" class="percent" value="10">
+                </div>
+                <div class="block_div">Срок размещения<br> в месяцах:
+                    <input type="number" class="time" value="12">
+                </div>
+                <div class="block_div">Капитализация:
+                    <select class="block_select">
+                        <option>Отсутствует</option>
+                        <option>Ежемесячно</option>
+                    </select>
+                </div>
+
+                <!-- нет кода расчета, только работают скрипты визуально -->
+                <div class="block_div" style="color:grey">Пополнение:
+                    <input type="checkbox" id="block_check">
+                    <input type="number" class="add-money" disabled>
+                </div>
+                <button class="block_btn">Расчитать</button>
+            </div>
+
+            <div class="block2">
+                <div class="block2_div">Имя:
+                    <div class="block2-res" id="name-input"></div>
+                </div>
+                <div class="block2_div">Проценты за месяц:
+                    <div class="block2-res" id="percentMonth-input"></div>
+                </div>
+                <div class="block2_div">Проценты ваш срок:
+                    <div class="block2-res" id="persent-input"></div>
+                </div>
+                <div class="block2_div">Депозит на конец срока:
+                    <div class="block2-res" id="deposit-input"></div>
+                </div>
+
+
+            </div>
+        </div>
+        <script src="js/main.js"></script>
+</body>
+
+</html>
